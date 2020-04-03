@@ -59,8 +59,8 @@ REQUEST_HEADERS_WHITELIST  = {"accept", "accept-encoding", "cache-control", "con
 RESPONSE_HEADERS_BLACKLIST = {"access-control-allow-origin", "alt-svc", "server"}
 HTTP_CHUNK_SIZE            = 10485760 # ~10MB
 
-CURRENT_BRANCH  = {{ "#{`git branch | sed -n '/* /s///p'`.strip}" }}
-CURRENT_COMMIT  = {{ "#{`git rev-list HEAD --max-count=1 --abbrev-commit`.strip}" }}
+CURRENT_BRANCH  = {{ "1.2.3" }}
+CURRENT_COMMIT  = {{ "1.2.3" }}
 CURRENT_VERSION = {{ "1.2.3" }}
 
 # This is used to determine the `?v=` on the end of file URLs (for cache busting). We
