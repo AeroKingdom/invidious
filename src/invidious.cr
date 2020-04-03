@@ -66,7 +66,7 @@ CURRENT_VERSION = {{ "1.2.3" }}
 # This is used to determine the `?v=` on the end of file URLs (for cache busting). We
 # only need to expire modified assets, so we can use this to find the last commit that changes
 # any assets
-ASSET_COMMIT = {{ "#{`git rev-list HEAD --max-count=1 --abbrev-commit -- assets`.strip}" }}
+ASSET_COMMIT = {{ "1.2.3" }}
 
 SOFTWARE = {
   "name"    => "invidious",
